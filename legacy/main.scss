@@ -1,0 +1,215 @@
+@use "./radient.scss";
+@use "./paint.scss";
+@use "./utils.scss";
+
+@use "sass:list";
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.gradient {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  margin: 10px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  padding: 5px;
+}
+
+.cloud {
+  @include radient.cloud();
+}
+
+.arrow {
+  $t: "conic-gradient(from 315deg at center right, rgba(0, 255, 255, 1) 270deg, rgba(255, 0, 0, 0) 270deg)";
+  $w: "linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 20%)";
+  $v: "linear-gradient(0deg, rgba(255, 255, 255, 0) calc(50% - 10px), rgba(0, 0, 0, 1) calc(50% - 10px), rgba(0, 0, 0, 1) calc(50% + 10px), rgba(255, 255, 255, 0) calc(50% + 10px))";
+  $u: "linear-gradient(90deg, rgba(0, 255, 255, 1) 80%, rgba(0, 0, 0, 0) 80%)";
+  $outerAngle: "conic-gradient(from 315deg at center right, rgba(0, 0, 255, 0) 270deg, rgba(0, 0, 0, 1) 270deg)";
+  background-image: #{$t}, #{$w}, #{$v}, #{$u}, #{$outerAngle};
+}
+
+.bracket {
+  $a: "conic-gradient(from 315deg at center right, rgba(255, 255, 255, 1) 270deg, rgba(0, 0, 0, 0) 270deg)";
+  $b: "linear-gradient(90deg, rgba(255, 0, 255, 1) 20%, rgba(255, 255, 255, 0) 20%)";
+  $c: "linear-gradient(0deg, rgba(255, 255, 255, 0) calc(50% - 10px), rgba(0, 0, 0, 1) calc(50% - 10px), rgba(0, 0, 0, 1) calc(50% + 10px), rgba(255, 255, 255, 0) calc(50% + 10px))";
+  $d: "conic-gradient(from 45deg at 40% 50%, rgba(0, 0, 255, 0) 90deg, rgba(255, 255, 255, 1) 90deg)";
+  $e: "conic-gradient(from 315deg at 90% 50%, rgba(0, 0, 255, 0) 270deg, rgba(255, 255, 255, 1) 270deg)";
+  $f: "conic-gradient(from 315deg at center right, rgba(255, 255, 255, 1) 270deg, rgba(0, 0, 0, 1) 270deg)";
+  background-image: #{$b};
+  background-origin: content-box;
+  padding: 10px;
+}
+
+.hamburger {
+  @include radient.menu();
+}
+
+.apps {
+  @include radient.apps();
+}
+
+.blaj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // compensate for container dimensions, create function to recalulate %-units to the original container.
+  &::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 40%;
+    background-color: red;
+    box-sizing: border-box;
+    @include radient.apps();
+  }
+}
+
+.wifi {
+  @include radient.wifi();
+}
+
+.contactless {
+  @include radient.contactless();
+}
+
+.pie {
+  @include radient.pie();
+}
+
+.pie-periphery {
+  @include radient.pie-periphery();
+}
+
+.face {
+  @include radient.face();
+}
+
+.done {
+  @include radient.done();
+}
+
+.chevron-down {
+  @include radient.chevron-down();
+}
+
+.chevron-up {
+  @include radient.chevron-up();
+}
+
+.chevron-right {
+  @include radient.chevron-right();
+}
+
+.chevron-left {
+  @include radient.chevron-left();
+}
+
+.arrow-right {
+  @include radient.arrow-right();
+}
+
+.ball {
+  @include radient.ball();
+}
+
+.gs1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  // compensate for container dimensions, create function to recalulate %-units to the original container.
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    @include radient.gs1(currentColor, #fff);
+    animation-duration: 1s;
+    animation-name: rotate;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.3);
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  3% {
+    transform: rotate(0deg);
+  }
+
+  97% {
+    transf´orm: rotate(540deg);
+  }
+
+  100% {
+    transform: rotate(540deg);
+  }
+}
+
+// Paint geometrics
+.rectangle {
+  background-image: #{paint.rectangle(
+      #000,
+      #fff,
+      #fff,
+      90deg,
+      50%,
+      10%,
+      25%,
+      100%
+    )};
+}
+
+.triangle {
+  background-image: #{paint.triangleFilled(
+      #000,
+      #fff,
+      40%,
+      20%,
+      60deg,
+      40%,
+      130deg
+    )};
+}
+
+.triangle1 {
+  background-image: #{paint.triangleFilledAntiAliased(
+      #000,
+      #fff,
+      40%,
+      20%,
+      60deg,
+      40%,
+      130deg
+    )};
+}
+
+.barcode {
+  @include radient.barcode();
+}
+
+.bar-chart {
+  @include radient.bar-chart();
+}

@@ -1,0 +1,142 @@
+@use "paint";
+@use "partials";
+@use "./position.scss";
+@use "./vars.scss";
+
+// Paint geometrics
+:root {
+  --paint-primary-color: #fba834;
+  --paint-secondary-color: #333a73;
+  --paint-tertiary-color: #387adf;
+  --paint-quaternary-color: #50c4ed;
+
+  .segment {
+    background-image: #{paint.segment(
+        var(--paint-primary-color),
+        var(--paint-secondary-color),
+        45deg,
+        20%,
+        35%
+      )};
+  }
+  .rectangle {
+    background-image: #{paint.rectangle(
+        var(--paint-primary-color),
+        var(--paint-secondary-color),
+        var(--paint-tertiary-color),
+        45deg,
+        25%,
+        // width
+        40%,
+        // height
+        50%,
+        // main start
+        50% // cross start
+      )};
+  }
+
+  .rectangle-anti-aliased {
+    background-image: #{paint.rectangle(
+        var(--paint-primary-color),
+        var(--paint-secondary-color),
+        var(--paint-tertiary-color),
+        45deg,
+        25%,
+        // width
+        40%,
+        // height
+        50%,
+        // main start
+        50%,
+        // cross start
+        true
+      )};
+  }
+
+  .triangle {
+    background-image: #{paint.triangleFilled(
+        var(--paint-primary-color),
+        var(--paint-secondary-color),
+        40%,
+        20%,
+        60deg,
+        40%,
+        130deg
+      )};
+  }
+
+  .triangle1 {
+    background-image: #{paint.triangleFilledAntiAliased(
+        var(--paint-primary-color),
+        var(--paint-secondary-color),
+        40%,
+        20%,
+        60deg,
+        40%,
+        130deg
+      )};
+  }
+
+  .circle {
+    background-image: #{paint.circleFilled(
+        var(--paint-primary-color),
+        var(--paint-secondary-color),
+        40%,
+        40%,
+        30%
+      )};
+  }
+
+  .oval {
+    background-image: #{paint.ovalFilled(
+        var(--paint-primary-color),
+        var(--paint-secondary-color),
+        40%,
+        40%,
+        20%,
+        40%
+      )};
+  }
+
+  .circle-outline {
+    background-image: #{paint.circleOutline(
+        var(--paint-primary-color),
+        var(--paint-secondary-color),
+        var(--paint-tertiary-color),
+        50%,
+        50%,
+        position.point(10),
+        position.point(4)
+      )};
+  }
+
+  .circle-outline-1 {
+    background-image: #{partials.circularOuline(
+        var(--paint-primary-color),
+        var(--paint-secondary-color)
+      )};
+  }
+
+  .oval-outline {
+    background-image: #{paint.ovalOutline(
+        var(--paint-primary-color),
+        var(--paint-secondary-color),
+        var(--paint-tertiary-color),
+        40%,
+        40%,
+        20%,
+        40%
+      )};
+  }
+
+  .sector {
+    background-image: #{paint.sector(
+        var(--paint-primary-color),
+        var(--paint-secondary-color),
+        45deg,
+        72deg,
+        50%,
+        50%
+      )};
+  }
+}
