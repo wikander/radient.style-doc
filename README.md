@@ -4,13 +4,18 @@
 
 ## Development
 
-From your terminal:
+1. npm run build and npm run pack in the main radient.style repository.
+2. npm i and npm i ../radient.style/packedfile.tgz
+3. install db
+   1. prism db push
+   2. prism db seed
+4. npm run dev
+   enjoy!
 
-```sh
-npm run dev
-```
+## Reset db
 
-This starts your app in development mode, rebuilding assets on file changes.
+1. npx prisma db push --force-reset
+2. npx prisma db seed
 
 ## Deployment
 

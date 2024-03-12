@@ -1,16 +1,12 @@
-import {
-  json,
-  LinksFunction,
-  LoaderArgs,
-  V2_MetaFunction,
-} from "@remix-run/node";
+import type { LoaderArgs, V2_MetaFunction } from "@remix-run/node";
+import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 
 import { db } from "~/utils/db.server";
 
 export const loader = async ({ request }: LoaderArgs) => {
   return json({
-    icons: await db.icons.findMany(),
+    icons: await db.icon.findMany(),
   });
 };
 

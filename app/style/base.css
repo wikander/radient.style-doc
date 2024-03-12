@@ -160,6 +160,18 @@
   background-image: conic-gradient(from 270deg at 41.6666666667% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg), conic-gradient(at 58.3333333333% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg), linear-gradient(90deg, #fff 29.1666666667%, rgba(0, 0, 0, 0) 29.1666666667% 70.8333333333%, #fff 70.8333333333%), linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 91.6666666667%, #fff 91.6666666667%), linear-gradient(90deg, rgba(0, 0, 0, 0) 29.1666666667%, currentColor 29.1666666667% 37.5%, rgba(0, 0, 0, 0) 37.5% 62.5%, currentColor 62.5% 70.8333333333%, rgba(0, 0, 0, 0) 70.8333333333%), linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 16.6666666667%, currentColor 16.6666666667% 25%, #fff 25% 33.3333333333%, currentColor 33.3333333333% 83.3333333333%, currentColor 83.3333333333% 91.6666666667%, #fff 91.6666666667%), linear-gradient(90deg, rgba(0, 0, 0, 0) 41.6666666667%, currentColor 41.6666666667% 58.3333333333%, rgba(0, 0, 0, 0) 58.3333333333%);
 }
 
+.player-stop {
+  background-image: linear-gradient(90deg, #fff 25%, rgba(0, 0, 0, 0) 25% 75%, #fff 75%), linear-gradient(0deg, #fff 25%, currentColor 25% 75%, #fff 75%);
+}
+
+.player-play {
+  background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0) 66.6666666667%, #fff calc(66.6666666667% + 1px)), linear-gradient(-148deg, #fff calc(38.7834944539% - 1px), rgba(0, 0, 0, 0) 38.7834944539%), linear-gradient(-32deg, #fff calc(38.7834944539% - 1px), currentColor 38.7834944539%);
+}
+
+.player-skip-next {
+  background-image: linear-gradient(180deg, #fff 25%, rgba(0, 0, 0, 0) 25% 75%, #fff 75%), linear-gradient(90deg, rgba(0, 0, 0, 0) 68.75%, currentColor 68.75% 77.0833333333%, rgba(0, 0, 0, 0) 77.0833333333%), linear-gradient(-90deg, rgba(0, 0, 0, 0) 77.0833333333%, #fff calc(77.0833333333% + 1px)), linear-gradient(-148deg, #fff calc(45.9941051621% - 1px), rgba(0, 0, 0, 0) 45.9941051621%), linear-gradient(-32deg, #fff calc(45.9941051621% - 1px), currentColor 45.9941051621%);
+}
+
 .blaj {
   display: flex;
   justify-content: center;

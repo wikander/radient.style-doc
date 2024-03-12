@@ -12,28 +12,28 @@
     "sass": "sass --watch app/:app/ --load-path=node_modules/radient.style/dist/css --load-path=node_modules/radient.style/scss"
   },
   "dependencies": {
-    "@prisma/client": "^4.14.0",
-    "@remix-run/css-bundle": "^1.16.0",
+    "@prisma/client": "^5.11.0",
+    "@remix-run/css-bundle": "^1.19.3",
     "@remix-run/node": "^1.16.0",
-    "@remix-run/react": "^1.16.0",
-    "@remix-run/serve": "^1.16.0",
-    "isbot": "^3.6.8",
+    "@remix-run/react": "^1.19.3",
+    "@remix-run/serve": "^1.19.3",
+    "isbot": "^3.8.0",
     "radient.style": "file:../radient.style/radient.style-0.0.1.tgz",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^1.16.0",
-    "@remix-run/eslint-config": "^1.16.0",
-    "@types/react": "^18.0.35",
-    "@types/react-dom": "^18.0.11",
-    "concurrently": "^8.0.1",
-    "eslint": "^8.38.0",
-    "prisma": "^4.14.0",
-    "sass": "^1.62.1",
-    "ts-node": "^10.9.1",
+    "@remix-run/dev": "^1.19.3",
+    "@remix-run/eslint-config": "^1.19.3",
+    "@types/react": "^18.2.65",
+    "@types/react-dom": "^18.2.21",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "prisma": "^5.11.0",
+    "sass": "^1.71.1",
+    "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.4.2"
   },
   "engines": {
     "node": ">=14"
