@@ -1,6 +1,6 @@
 import type { LoaderArgs, V2_MetaFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
+import { useLoaderData, useOutletContext } from "@remix-run/react";
 
 import { db } from "~/utils/db.server";
 
@@ -17,9 +17,17 @@ export const meta: V2_MetaFunction = () => {
 export default function IconDisplay() {
   const data = useLoaderData<typeof loader>();
 
+  const outletContext = useOutletContext() as any;
+  console.log("outlet ctx", outletContext);
+  let filteredData: null | { className: string }[] = null;
+  if (outletContext.filter) {
+    filteredData = data.icons.filter((icon: { className: string }) => {
+      return icon.className.includes(outletContext.filter);
+    });
+  }
   return (
     <>
-      {data.icons.map((icon, index) => {
+      {(filteredData ?? data.icons).map((icon, index) => {
         return (
           <div
             key={index}

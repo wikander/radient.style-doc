@@ -165,6 +165,9 @@ async function seed() {
           {
             className: "player-skip-next",
           },
+          {
+            className: "player-pause",
+          },
         ],
       },
     },
@@ -183,6 +186,9 @@ async function seed() {
           },
           {
             className: "bar-chart",
+          },
+          {
+            className: "pie-full",
           },
         ],
       },
@@ -251,6 +257,12 @@ async function seed() {
           },
           {
             className: "barcode",
+          },
+          {
+            className: "man",
+          },
+          {
+            className: "woman",
           },
         ],
       },

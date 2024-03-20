@@ -1,10 +1,10 @@
-import {
-  json,
+import type {
   LinksFunction,
   LoaderArgs,
   V2_MetaFunction,
 } from "@remix-run/node";
-import { Link, Outlet, useLoaderData } from "@remix-run/react";
+import { json } from "@remix-run/node";
+import { Outlet, useSearchParams } from "@remix-run/react";
 import style from "../style/icon-display.css";
 import { setCssCustomProperty } from "~/utils/ui-utils";
 
@@ -42,8 +42,8 @@ const SetGridSizeButton = ({
 };
 
 export default function IconDisplay() {
-  const data = useLoaderData<typeof loader>();
-
+  const [searchParams] = useSearchParams();
+  const filter = searchParams.get("filter");
   return (
     <div className="icon-container">
       <nav>
@@ -54,7 +54,7 @@ export default function IconDisplay() {
         <SetGridSizeButton label="FULL" size={40000}></SetGridSizeButton>
       </nav>
       <div className="icon-display">
-        <Outlet></Outlet>
+        <Outlet context={{ filter }}></Outlet>
       </div>
     </div>
   );

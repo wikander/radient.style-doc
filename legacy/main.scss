@@ -195,14 +195,15 @@ body {
 }
 
 .triangle1 {
-  background-image: #{paint.triangleFilledAntiAliased(
+  background-image: #{paint.triangleFilled(
       #000,
       #fff,
       40%,
       20%,
       60deg,
       40%,
-      130deg
+      130deg,
+      true
     )};
 }
 

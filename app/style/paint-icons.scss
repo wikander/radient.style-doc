@@ -66,14 +66,15 @@
   }
 
   .triangle1 {
-    background-image: #{paint.triangleFilledAntiAliased(
+    background-image: #{paint.triangleFilled(
         var(--paint-primary-color),
         var(--paint-secondary-color),
-        40%,
-        20%,
+        position.point(12),
+        position.point(3),
         60deg,
-        40%,
-        130deg
+        position.point(9),
+        180deg,
+        true
       )};
   }
 
