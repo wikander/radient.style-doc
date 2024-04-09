@@ -47,10 +47,10 @@ export default function IconDisplay() {
   return (
     <div className="icon-container">
       <nav>
-        <SetGridSizeButton label="S" size={40}></SetGridSizeButton>
-        <SetGridSizeButton label="M" size={100}></SetGridSizeButton>
-        <SetGridSizeButton label="L" size={250}></SetGridSizeButton>
-        <SetGridSizeButton label="XL" size={400}></SetGridSizeButton>
+        <SetGridSizeButton label="S" size={24}></SetGridSizeButton>
+        <SetGridSizeButton label="M" size={24 * 2}></SetGridSizeButton>
+        <SetGridSizeButton label="L" size={24 * 4}></SetGridSizeButton>
+        <SetGridSizeButton label="XL" size={24 * 16}></SetGridSizeButton>
         <SetGridSizeButton label="FULL" size={40000}></SetGridSizeButton>
       </nav>
       <div className="icon-display">

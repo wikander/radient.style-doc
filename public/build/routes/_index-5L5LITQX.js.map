@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../app/routes/_index.tsx"],
-  "sourcesContent": ["import type { V2_MetaFunction } from \"@remix-run/node\";\nimport { Link } from \"@remix-run/react\";\n\nexport const meta: V2_MetaFunction = () => {\n  return [{ title: \"New Remix App\" }];\n};\n\nexport default function Index() {\n  return (\n    <div style={{ fontFamily: \"system-ui, sans-serif\", lineHeight: \"1.4\" }}>\n      <h1>Radient.Style</h1>\n      <ul>\n        <li>\n          <Link to=\"icon-display/all-icons\">All</Link>\n        </li>\n        <li>\n          <Link to=\"icon-display/experiment-icons\">Experiments</Link>\n        </li>\n        <li>\n          <Link to=\"icon-display/paint-icons\">Paint</Link>\n        </li>\n      </ul>\n    </div>\n  );\n}\n"],
-  "mappings": ";;;;;;;;;AAUM;AAPC,IAAM,OAAwB,MAAM;AACzC,SAAO,CAAC,EAAE,OAAO,gBAAgB,CAAC;AACpC;AAEe,SAAR,QAAyB;AAC9B,SACE,mDAAC,SAAI,OAAO,EAAE,YAAY,yBAAyB,YAAY,MAAM,GACnE;AAAA,uDAAC,QAAG,6BAAJ;AAAA;AAAA;AAAA;AAAA,WAAiB;AAAA,IACjB,mDAAC,QACC;AAAA,yDAAC,QACC,6DAAC,QAAK,IAAG,0BAAyB,mBAAlC;AAAA;AAAA;AAAA;AAAA,aAAqC,KADvC;AAAA;AAAA;AAAA;AAAA,aAEA;AAAA,MACA,mDAAC,QACC,6DAAC,QAAK,IAAG,iCAAgC,2BAAzC;AAAA;AAAA;AAAA;AAAA,aAAoD,KADtD;AAAA;AAAA;AAAA;AAAA,aAEA;AAAA,MACA,mDAAC,QACC,6DAAC,QAAK,IAAG,4BAA2B,qBAApC;AAAA;AAAA;AAAA;AAAA,aAAyC,KAD3C;AAAA;AAAA;AAAA;AAAA,aAEA;AAAA,SATF;AAAA;AAAA;AAAA;AAAA,WAUA;AAAA,OAZF;AAAA;AAAA;AAAA;AAAA,SAaA;AAEJ;",
-  "names": []
-}

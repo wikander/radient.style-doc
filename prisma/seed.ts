@@ -2,24 +2,6 @@ import { PrismaClient } from "@prisma/client";
 const db = new PrismaClient();
 
 async function seed() {
-  // allIcons().map((icon: { className: string }) => {
-  //   return db.icon.create({ data: icon });
-  // })
-
-  //   db.iconGroup.create({
-  //     data: {
-  //       name: "test",
-  //       icons: {
-  //         create: [
-  //           {
-  //             className: "cloud",
-  //           },
-  //         ],
-  //       },
-  //     },
-  //   })
-  // );
-
   await db.iconGroup.create({
     data: {
       name: "logo",
@@ -69,39 +51,6 @@ async function seed() {
       },
     },
   });
-  await db.iconGroup.create({
-    data: {
-      name: "arrows",
-      icons: {
-        create: [
-          {
-            className: "chevron-up",
-          },
-          {
-            className: "chevron-down",
-          },
-          {
-            className: "chevron-right",
-          },
-          {
-            className: "chevron-left",
-          },
-          {
-            className: "arrow-up",
-          },
-          {
-            className: "arrow-down",
-          },
-          {
-            className: "arrow-right",
-          },
-          {
-            className: "arrow-left",
-          },
-        ],
-      },
-    },
-  });
 
   await db.iconGroup.create({
     data: {
@@ -146,6 +95,18 @@ async function seed() {
           },
           {
             className: "arrow-left",
+          },
+          {
+            className: "pyramid-arrow-up",
+          },
+          {
+            className: "pyramid-arrow-down",
+          },
+          {
+            className: "pyramid-arrow-right",
+          },
+          {
+            className: "pyramid-arrow-left",
           },
         ],
       },
@@ -204,6 +165,15 @@ async function seed() {
             className: "menu",
           },
           {
+            className: "calendar",
+          },
+          {
+            className: "drag-handle",
+          },
+          {
+            className: "list",
+          },
+          {
             className: "apps",
           },
           {
@@ -232,6 +202,12 @@ async function seed() {
           },
           {
             className: "info-circle",
+          },
+          {
+            className: "send",
+          },
+          {
+            className: "house",
           },
         ],
       },
@@ -263,6 +239,15 @@ async function seed() {
           },
           {
             className: "woman",
+          },
+          {
+            className: "credit-card",
+          },
+          {
+            className: "accessibility",
+          },
+          {
+            className: "sun",
           },
         ],
       },

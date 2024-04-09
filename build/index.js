@@ -155,7 +155,7 @@ __export(root_exports, {
 var import_css_bundle = __toESM(require_dist());
 
 // app/style/base.css
-var base_default = "/build/_assets/base-UYFMS6FL.css";
+var base_default = "/build/_assets/base-6OFBTPCL.css";
 
 // app/root.tsx
 var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime2 = require("react/jsx-dev-runtime"), links = () => [
@@ -281,7 +281,7 @@ __export(icon_display_paint_icons_exports, {
 });
 
 // app/style/paint-icons.css
-var paint_icons_default = "/build/_assets/paint-icons-IW5CJ33Z.css";
+var paint_icons_default = "/build/_assets/paint-icons-XCAS4ZSJ.css";
 
 // app/routes/icon-display.paint-icons.tsx
 var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime"), meta2 = () => [{ title: "Paint Icons" }], links3 = () => [
@@ -293,11 +293,12 @@ var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime"), meta2 = () => [{
 function IconDisplay2() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_jsx_dev_runtime4.Fragment, { children: [
     { className: "segment" },
+    { className: "stripes" },
+    { className: "stripes-reference" },
     { className: "rectangle" },
     { className: "rectangle-anti-aliased" },
     { className: "circle" },
     { className: "circle-outline" },
-    { className: "circle-outline-1" },
     { className: "oval" },
     { className: "oval-outline" },
     { className: "triangle" },
@@ -312,13 +313,13 @@ function IconDisplay2() {
     !1,
     {
       fileName: "app/routes/icon-display.paint-icons.tsx",
-      lineNumber: 33,
+      lineNumber: 34,
       columnNumber: 11
     },
     this
   )) }, void 0, !1, {
     fileName: "app/routes/icon-display.paint-icons.tsx",
-    lineNumber: 30,
+    lineNumber: 31,
     columnNumber: 5
   }, this);
 }
@@ -375,7 +376,7 @@ __export(icon_display_exports, {
 var import_node3 = require("@remix-run/node"), import_react4 = require("@remix-run/react");
 
 // app/style/icon-display.css
-var icon_display_default = "/build/_assets/icon-display-2GKFD67T.css";
+var icon_display_default = "/build/_assets/icon-display-BRB3BGVZ.css";
 
 // app/utils/ui-utils.ts
 function setCssCustomProperty(property, value) {
@@ -406,22 +407,22 @@ function IconDisplay4() {
   let [searchParams] = (0, import_react4.useSearchParams)(), filter = searchParams.get("filter");
   return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "icon-container", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("nav", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(SetGridSizeButton, { label: "S", size: 40 }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(SetGridSizeButton, { label: "S", size: 24 }, void 0, !1, {
         fileName: "app/routes/icon-display.tsx",
         lineNumber: 50,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(SetGridSizeButton, { label: "M", size: 100 }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(SetGridSizeButton, { label: "M", size: 24 * 2 }, void 0, !1, {
         fileName: "app/routes/icon-display.tsx",
         lineNumber: 51,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(SetGridSizeButton, { label: "L", size: 250 }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(SetGridSizeButton, { label: "L", size: 24 * 4 }, void 0, !1, {
         fileName: "app/routes/icon-display.tsx",
         lineNumber: 52,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(SetGridSizeButton, { label: "XL", size: 400 }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(SetGridSizeButton, { label: "XL", size: 24 * 16 }, void 0, !1, {
         fileName: "app/routes/icon-display.tsx",
         lineNumber: 53,
         columnNumber: 9
@@ -529,7 +530,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-4K6RW3XE.js", imports: ["/build/_shared/chunk-6SF52W5A.js", "/build/_shared/chunk-4QJKEWZT.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-AFYLXIDC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-5L5LITQX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-display": { id: "routes/icon-display", parentId: "root", path: "icon-display", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-display-WZCWEJZN.js", imports: ["/build/_shared/chunk-FGLRUSZ5.js", "/build/_shared/chunk-FFHBG6Q3.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-display.all-icons": { id: "routes/icon-display.all-icons", parentId: "routes/icon-display", path: "all-icons", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-display.all-icons-PC5C3MLJ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-display.experiment-icons": { id: "routes/icon-display.experiment-icons", parentId: "routes/icon-display", path: "experiment-icons", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-display.experiment-icons-DTGBD5WM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-display.paint-icons": { id: "routes/icon-display.paint-icons", parentId: "routes/icon-display", path: "paint-icons", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-display.paint-icons-3UJHGCT4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-single": { id: "routes/icon-single", parentId: "root", path: "icon-single", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-single-VWTYMEWT.js", imports: ["/build/_shared/chunk-FGLRUSZ5.js", "/build/_shared/chunk-FFHBG6Q3.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "8007508d", hmr: void 0, url: "/build/manifest-8007508D.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-4K6RW3XE.js", imports: ["/build/_shared/chunk-6SF52W5A.js", "/build/_shared/chunk-4QJKEWZT.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-SCIE7N6Z.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-5L5LITQX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-display": { id: "routes/icon-display", parentId: "root", path: "icon-display", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-display-TH3IFCFU.js", imports: ["/build/_shared/chunk-ZKN3MBBY.js", "/build/_shared/chunk-FFHBG6Q3.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-display.all-icons": { id: "routes/icon-display.all-icons", parentId: "routes/icon-display", path: "all-icons", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-display.all-icons-PC5C3MLJ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-display.experiment-icons": { id: "routes/icon-display.experiment-icons", parentId: "routes/icon-display", path: "experiment-icons", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-display.experiment-icons-DTGBD5WM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-display.paint-icons": { id: "routes/icon-display.paint-icons", parentId: "routes/icon-display", path: "paint-icons", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-display.paint-icons-5WXY3LF5.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-single": { id: "routes/icon-single", parentId: "root", path: "icon-single", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-single-5GP4AXWT.js", imports: ["/build/_shared/chunk-ZKN3MBBY.js", "/build/_shared/chunk-FFHBG6Q3.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "b674bd6b", hmr: void 0, url: "/build/manifest-B674BD6B.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !1, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

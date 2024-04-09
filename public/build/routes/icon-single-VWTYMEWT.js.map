@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../app/routes/icon-single.tsx"],
-  "sourcesContent": ["import type { LinksFunction, LoaderArgs } from \"@remix-run/node\";\nimport { json } from \"@remix-run/node\";\nimport style from \"../style/icon-display.css\";\n\nexport const links: LinksFunction = () => [\n{\n  rel: \"stylesheet\",\n  href: style\n}];\n\n\nexport const loader = async ({ request }: LoaderArgs) => {\n  return json(null);\n};\n\nexport default function IconDisplay() {\n  return <div className={`radient-icon-base pie`}></div>;\n}"],
-  "mappings": ";;;;;;;;;;;;AACA,kBAAqB;AAeZ;AAZF,IAAM,QAAuB,MAAM;AAAA,EAC1C;AAAA,IACE,KAAK;AAAA,IACL,MAAM;AAAA,EACR;AAAC;AAOc,SAAR,cAA+B;AACpC,SAAO,mDAAC,SAAI,WAAW,2BAAhB;AAAA;AAAA;AAAA;AAAA,SAAyC;AAClD;",
-  "names": []
-}

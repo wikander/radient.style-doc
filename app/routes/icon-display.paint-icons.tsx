@@ -1,4 +1,4 @@
-import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
+import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import style from "../style/paint-icons.css";
 
 export const meta: V2_MetaFunction = () => {
@@ -15,11 +15,12 @@ export const links: LinksFunction = () => [
 export default function IconDisplay() {
   const icons = [
     { className: "segment" },
+    { className: "stripes" },
+    { className: "stripes-reference" },
     { className: "rectangle" },
     { className: "rectangle-anti-aliased" },
     { className: "circle" },
     { className: "circle-outline" },
-    { className: "circle-outline-1" },
     { className: "oval" },
     { className: "oval-outline" },
     { className: "triangle" },

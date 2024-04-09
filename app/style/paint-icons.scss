@@ -1,5 +1,4 @@
 @use "paint";
-@use "partials";
 @use "./position.scss";
 @use "./vars.scss";
 
@@ -19,6 +18,30 @@
         35%
       )};
   }
+
+  .stripes {
+    background-image: #{paint.stripes(
+        var(--paint-secondary-color),
+        45deg,
+        [(0%, 35%, #{var(--paint-primary-color)}),
+        (
+            60%,
+            40%,
+            #{var(--paint-tertiary-color)},
+            #{var(--paint-quaternary-color)}
+          )]
+      )};
+  }
+
+  .stripes-reference {
+    background-image: linear-gradient(
+      0deg,
+      var(--paint-secondary-color) 20%,
+      var(--paint-primary-color) 20% 55%,
+      var(--paint-secondary-color) 55%
+    );
+  }
+
   .rectangle {
     background-image: #{paint.rectangle(
         var(--paint-primary-color),
@@ -54,7 +77,7 @@
   }
 
   .triangle {
-    background-image: #{paint.triangleFilled(
+    background-image: #{paint.triangle(
         var(--paint-primary-color),
         var(--paint-secondary-color),
         40%,
@@ -66,7 +89,7 @@
   }
 
   .triangle1 {
-    background-image: #{paint.triangleFilled(
+    background-image: #{paint.triangle(
         var(--paint-primary-color),
         var(--paint-secondary-color),
         position.point(12),
@@ -79,7 +102,7 @@
   }
 
   .circle {
-    background-image: #{paint.circleFilled(
+    background-image: #{paint.circle(
         var(--paint-primary-color),
         var(--paint-secondary-color),
         40%,
@@ -89,7 +112,7 @@
   }
 
   .oval {
-    background-image: #{paint.ovalFilled(
+    background-image: #{paint.oval(
         var(--paint-primary-color),
         var(--paint-secondary-color),
         40%,
@@ -108,13 +131,6 @@
         50%,
         position.point(10),
         position.point(4)
-      )};
-  }
-
-  .circle-outline-1 {
-    background-image: #{partials.circularOuline(
-        var(--paint-primary-color),
-        var(--paint-secondary-color)
       )};
   }
 
