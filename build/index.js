@@ -155,7 +155,7 @@ __export(root_exports, {
 var import_css_bundle = __toESM(require_dist());
 
 // app/style/base.css
-var base_default = "/build/_assets/base-6OFBTPCL.css";
+var base_default = "/build/_assets/base-QWRLAODH.css";
 
 // app/root.tsx
 var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime2 = require("react/jsx-dev-runtime"), links = () => [
@@ -281,7 +281,7 @@ __export(icon_display_paint_icons_exports, {
 });
 
 // app/style/paint-icons.css
-var paint_icons_default = "/build/_assets/paint-icons-XCAS4ZSJ.css";
+var paint_icons_default = "/build/_assets/paint-icons-52MFNXFX.css";
 
 // app/routes/icon-display.paint-icons.tsx
 var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime"), meta2 = () => [{ title: "Paint Icons" }], links3 = () => [
@@ -298,9 +298,9 @@ function IconDisplay2() {
     { className: "rectangle" },
     { className: "rectangle-anti-aliased" },
     { className: "circle" },
-    { className: "circle-outline" },
+    { className: "circle-outlined" },
     { className: "oval" },
-    { className: "oval-outline" },
+    { className: "oval-outlined" },
     { className: "triangle" },
     { className: "triangle1" },
     { className: "sector" }
@@ -530,7 +530,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-4K6RW3XE.js", imports: ["/build/_shared/chunk-6SF52W5A.js", "/build/_shared/chunk-4QJKEWZT.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-SCIE7N6Z.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-5L5LITQX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-display": { id: "routes/icon-display", parentId: "root", path: "icon-display", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-display-TH3IFCFU.js", imports: ["/build/_shared/chunk-ZKN3MBBY.js", "/build/_shared/chunk-FFHBG6Q3.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-display.all-icons": { id: "routes/icon-display.all-icons", parentId: "routes/icon-display", path: "all-icons", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-display.all-icons-PC5C3MLJ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-display.experiment-icons": { id: "routes/icon-display.experiment-icons", parentId: "routes/icon-display", path: "experiment-icons", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-display.experiment-icons-DTGBD5WM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-display.paint-icons": { id: "routes/icon-display.paint-icons", parentId: "routes/icon-display", path: "paint-icons", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-display.paint-icons-5WXY3LF5.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-single": { id: "routes/icon-single", parentId: "root", path: "icon-single", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-single-5GP4AXWT.js", imports: ["/build/_shared/chunk-ZKN3MBBY.js", "/build/_shared/chunk-FFHBG6Q3.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "b674bd6b", hmr: void 0, url: "/build/manifest-B674BD6B.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-4K6RW3XE.js", imports: ["/build/_shared/chunk-6SF52W5A.js", "/build/_shared/chunk-4QJKEWZT.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-WSQY7RBL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-5L5LITQX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-display": { id: "routes/icon-display", parentId: "root", path: "icon-display", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-display-TH3IFCFU.js", imports: ["/build/_shared/chunk-ZKN3MBBY.js", "/build/_shared/chunk-FFHBG6Q3.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-display.all-icons": { id: "routes/icon-display.all-icons", parentId: "routes/icon-display", path: "all-icons", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-display.all-icons-PC5C3MLJ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-display.experiment-icons": { id: "routes/icon-display.experiment-icons", parentId: "routes/icon-display", path: "experiment-icons", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-display.experiment-icons-DTGBD5WM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-display.paint-icons": { id: "routes/icon-display.paint-icons", parentId: "routes/icon-display", path: "paint-icons", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-display.paint-icons-6DHQ3O43.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/icon-single": { id: "routes/icon-single", parentId: "root", path: "icon-single", index: void 0, caseSensitive: void 0, module: "/build/routes/icon-single-5GP4AXWT.js", imports: ["/build/_shared/chunk-ZKN3MBBY.js", "/build/_shared/chunk-FFHBG6Q3.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "765479d5", hmr: void 0, url: "/build/manifest-765479D5.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !1, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

@@ -1,0 +1,430 @@
+/* app/style/base.css */
+:root {
+  --pieceAngle: 100deg;
+}
+.apps {
+  background-size: 33.33% 33.33%;
+  background-repeat: repeat;
+  background-image: radial-gradient(35% 35%, currentColor calc(100% - 1px), #fff 100%);
+}
+.cloud {
+  background-image:
+    linear-gradient(0deg, #fff 16.6666666667%, rgba(0, 0, 0, 0) 16.6666666667%),
+    radial-gradient(circle at 50% 70%, currentColor 27%, rgba(0, 0, 0, 0) calc(27% + 1px)),
+    radial-gradient(circle at 30% 60%, currentColor 27%, rgba(0, 0, 0, 0) calc(27% + 1px)),
+    radial-gradient(circle at 75% 65%, currentColor 21%, rgba(0, 0, 0, 0) calc(21% + 1px)),
+    radial-gradient(circle at 50% 48%, currentColor 42%, rgba(0, 0, 0, 0) calc(42% + 1px));
+}
+.face {
+  background-image:
+    radial-gradient(4% 4% at 65% 45%, currentColor 100%, rgba(0, 0, 0, 0) 100%),
+    radial-gradient(4% 4% at 35% 45%, currentColor 100%, rgba(0, 0, 0, 0) 100%),
+    radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 91.6666666667%, currentColor 91.6666666667% 100%, #fff 100%),
+    radial-gradient(50% 50% at 80% -15%, currentColor 100%, rgba(0, 0, 0, 0) 100%),
+    radial-gradient(50% 50% at 0% -20%, currentColor 100%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(180deg, #fff 64%, rgba(0, 0, 0, 0) calc(64% + 1px)),
+    radial-gradient(30% 30% at 50% 50%, currentColor 100%, rgba(0, 0, 0, 0) 100%);
+}
+.pie {
+  background-image: radial-gradient(50% 50%, #fff calc(0% - 1px), transparent 0% calc(100% - 1px), #fff 100%), conic-gradient(from 0deg at 50% 50%, currentColor var(--pieceAngle), #fff var(--pieceAngle) 0deg);
+}
+.pie-full {
+  background-image: radial-gradient(50% 50%, #fff calc(0% - 1px), transparent 0% calc(100% - 1px), #fff 100%), conic-gradient(from 0deg at 50% 50%, red 90deg, green 90deg 180deg, blue 180deg 270deg, orange 270deg);
+}
+.pie-periphery {
+  background-image: radial-gradient(50% 50%, #fff calc(84% - 1px), transparent 84% calc(100% - 1px), #fff 100%), conic-gradient(from 0deg at 50% 50%, currentColor var(--pieceAngle), #fff var(--pieceAngle) 0deg);
+}
+.contactless {
+  background-image: conic-gradient(from 117.75deg, #fff .8458333333turn, transparent .8458333333turn), radial-gradient(50% 50%, #fff 35%, currentColor 35% 44%, #fff 44% 53%, currentColor 53% 62%, #fff 62% 71%, currentColor 71% 80%, #fff 80% 89%, currentColor 89% 98%, #fff 98%);
+}
+.wifi {
+  background-image: conic-gradient(from 45deg at 50% 83%, #fff 270deg, transparent 270deg), radial-gradient(50% 50% at 50% 83%, currentColor 35%, #fff calc(35% + 1px) calc(58.5% - 1px), currentColor 58.5% 82%, #fff calc(82% + 1px) calc(105.5% - 1px), currentColor 105.5% 129%, #fff calc(129% + 1px));
+}
+.menu {
+  background-image: linear-gradient(90deg, #fff 12.5%, rgba(0, 0, 0, 0) 12.5% 87.5%, #fff 87.5%), linear-gradient(0, #fff 25%, currentColor 25% 33.3333333333%, #fff 33.3333333333% 45.8333333333%, currentColor 45.8333333333% 54.1666666667%, #fff 54.1666666667% 66.6666666667%, currentColor 66.6666666667% 75%, #fff 75%);
+}
+.list {
+  background-image: linear-gradient(90deg, #fff 12.5%, rgba(0, 0, 0, 0) 12.5% 20.8333333333%, #fff 20.8333333333% 29.1666666667%, rgba(0, 0, 0, 0) 29.1666666667% 87.5%, #fff 87.5%), linear-gradient(0, #fff 29.1666666667%, currentColor 29.1666666667% 37.5%, #fff 37.5% 45.8333333333%, currentColor 45.8333333333% 54.1666666667%, #fff 54.1666666667% 62.5%, currentColor 62.5% 70.8333333333%, #fff 70.8333333333%);
+}
+.drag-handle {
+  background-image: linear-gradient(90deg, #fff 16.6666666667%, rgba(0, 0, 0, 0) 16.6666666667% 83.3333333333%, #fff 83.3333333333%), linear-gradient(0, #fff 37.5%, currentColor 37.5% 45.8333333333%, #fff 45.8333333333% 54.1666666667%, currentColor 54.1666666667% 62.5%, #fff 62.5%);
+}
+.gs1 {
+  background-image: conic-gradient(from -25deg at 60% 50%, #fff 230deg, rgba(0, 0, 0, 0) 230deg), radial-gradient(50% 50%, rgba(0, 0, 0, 0) calc(37% - 1px), currentColor 37% 43%, rgba(0, 0, 0, 0) calc(43% + 1px) calc(54% - 1px), currentColor 54% 61%, rgba(0, 0, 0, 0) calc(61% + 1px) calc(72% - 1px), currentColor 72% 80%, rgba(0, 0, 0, 0) calc(80% + 1px) calc(91% - 1px), currentColor 91% 100%, rgba(0, 0, 0, 0) calc(100% + 1px));
+}
+.done {
+  background-image:
+    conic-gradient(from 135deg at 64% 5.4%, rgba(0, 0, 0, 0) 90deg, #fff 90deg 315deg),
+    conic-gradient(from 315deg at 37.5% 67.5%, #fff 90deg, rgba(0, 0, 0, 0) 90deg 315deg),
+    conic-gradient(from 315deg at 37.5% 79%, currentColor 90deg, rgba(0, 0, 0, 0) 90deg 315deg);
+}
+.chevron-down {
+  background-image:
+    conic-gradient(from 495deg at 50% 16.6666666667%, rgba(0, 0, 0, 0) 90deg, #fff 90deg 495deg),
+    conic-gradient(from 315deg at 50% 54.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg 315deg),
+    conic-gradient(from 315deg at 50% 66.6666666667%, currentColor 90deg, rgba(0, 0, 0, 0) 90deg 315deg);
+}
+.chevron-up {
+  background-image:
+    conic-gradient(from 315deg at 50% 83.3333333333%, rgba(0, 0, 0, 0) 90deg, #fff 90deg 315deg),
+    conic-gradient(from 135deg at 50% 45.3333333333%, #fff 90deg, rgba(0, 0, 0, 0) 90deg 135deg),
+    conic-gradient(from 135deg at 50% 33.3333333333%, currentColor 90deg, rgba(0, 0, 0, 0) 90deg 135deg);
+}
+.chevron-right {
+  background-image:
+    conic-gradient(from 405deg at 16.6666666667% 50%, rgba(0, 0, 0, 0) 90deg, #fff 90deg 405deg),
+    conic-gradient(from 225deg at 54.6666666667% 50%, #fff 90deg, rgba(0, 0, 0, 0) 90deg 225deg),
+    conic-gradient(from 225deg at 66.6666666667% 50%, currentColor 90deg, rgba(0, 0, 0, 0) 90deg 225deg);
+}
+.chevron-left {
+  background-image:
+    conic-gradient(from 585deg at 83.3333333333% 50%, rgba(0, 0, 0, 0) 90deg, #fff 90deg 585deg),
+    conic-gradient(from 405deg at 45.3333333333% 50%, #fff 90deg, rgba(0, 0, 0, 0) 90deg 405deg),
+    conic-gradient(from 405deg at 33.3333333333% 50%, currentColor 90deg, rgba(0, 0, 0, 0) 90deg 405deg);
+}
+.arrow-up {
+  background-image:
+    conic-gradient(from 225deg at 50% 16.6666666667%, #fff 270deg, rgba(0, 0, 0, 0) 270deg),
+    linear-gradient(0deg, #fff 16.6666666667%, rgba(0, 0, 0, 0) 16.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 45.8333333333%, currentColor 45.8333333333%, currentColor 54.1666666667%, rgba(0, 0, 0, 0) 54.1666666667%),
+    conic-gradient(from 315deg at 50% 83.3333333333%, rgba(0, 0, 0, 0) 90deg, #fff 90deg 315deg),
+    conic-gradient(from 135deg at 50% 28.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg 135deg),
+    conic-gradient(from 135deg at 50% 16.6666666667%, currentColor 90deg, rgba(0, 0, 0, 0) 90deg 135deg);
+}
+.arrow-down {
+  background-image:
+    conic-gradient(from 405deg at 50% 83.3333333333%, #fff 270deg, rgba(0, 0, 0, 0) 270deg),
+    linear-gradient(180deg, #fff 16.6666666667%, rgba(0, 0, 0, 0) 16.6666666667%),
+    linear-gradient(270deg, rgba(0, 0, 0, 0) 45.8333333333%, currentColor 45.8333333333%, currentColor 54.1666666667%, rgba(0, 0, 0, 0) 54.1666666667%),
+    conic-gradient(from 495deg at 50% 16.6666666667%, rgba(0, 0, 0, 0) 90deg, #fff 90deg 495deg),
+    conic-gradient(from 315deg at 50% 71.3333333333%, #fff 90deg, rgba(0, 0, 0, 0) 90deg 315deg),
+    conic-gradient(from 315deg at 50% 83.3333333333%, currentColor 90deg, rgba(0, 0, 0, 0) 90deg 315deg);
+}
+.arrow-right {
+  background-image:
+    conic-gradient(from 315deg at 83.3333333333% 50%, #fff 270deg, rgba(0, 0, 0, 0) 270deg),
+    linear-gradient(90deg, #fff 16.6666666667%, rgba(0, 0, 0, 0) 16.6666666667%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 45.8333333333%, currentColor 45.8333333333%, currentColor 54.1666666667%, rgba(0, 0, 0, 0) 54.1666666667%),
+    conic-gradient(from 405deg at 16.6666666667% 50%, rgba(0, 0, 0, 0) 90deg, #fff 90deg 405deg),
+    conic-gradient(from 225deg at 71.3333333333% 50%, #fff 90deg, rgba(0, 0, 0, 0) 90deg 225deg),
+    conic-gradient(from 225deg at 83.3333333333% 50%, currentColor 90deg, rgba(0, 0, 0, 0) 90deg 225deg);
+}
+.arrow-left {
+  background-image:
+    conic-gradient(from 495deg at 16.6666666667% 50%, #fff 270deg, rgba(0, 0, 0, 0) 270deg),
+    linear-gradient(270deg, #fff 16.6666666667%, rgba(0, 0, 0, 0) 16.6666666667%),
+    linear-gradient(360deg, rgba(0, 0, 0, 0) 45.8333333333%, currentColor 45.8333333333%, currentColor 54.1666666667%, rgba(0, 0, 0, 0) 54.1666666667%),
+    conic-gradient(from 585deg at 83.3333333333% 50%, rgba(0, 0, 0, 0) 90deg, #fff 90deg 585deg),
+    conic-gradient(from 405deg at 28.6666666667% 50%, #fff 90deg, rgba(0, 0, 0, 0) 90deg 405deg),
+    conic-gradient(from 405deg at 16.6666666667% 50%, currentColor 90deg, rgba(0, 0, 0, 0) 90deg 405deg);
+}
+.ball {
+  background-image:
+    radial-gradient(35% 35% at 0% 50%, rgba(0, 0, 0, 0) calc(88.0952380952% - 1px), #fff 88.0952380952% 100%, rgba(0, 0, 0, 0) calc(100% + 1px)),
+    radial-gradient(35% 35% at 100% 50%, rgba(0, 0, 0, 0) calc(88.0952380952% - 1px), #fff 88.0952380952% 100%, rgba(0, 0, 0, 0) calc(100% + 1px)),
+    radial-gradient(41.6666666667% 41.6666666667% at 50% 50%, currentColor 100%, #fff calc(100% + 1px));
+}
+.barcode {
+  background-image: linear-gradient(0, #fff 22.9166666667%, rgba(0, 0, 0, 0) 22.9166666667% 77.0833333333%, #fff 77.0833333333%), linear-gradient(to right, rgba(0, 0, 0, 0) 12.5%, currentColor 12.5% 16.4473684211%, #fff 16.4473684211% 19.6052631579%, currentColor 19.6052631579% 25.1315789474%, #fff 25.1315789474% 31.4473684211%, currentColor 31.4473684211% 36.1842105263%, #fff 36.1842105263% 37.7631578947%, currentColor 37.7631578947% 44.8684210526%, #fff 44.8684210526% 51.9736842105%, currentColor 51.9736842105% 53.5526315789%, #fff 53.5526315789% 58.2894736842%, currentColor 58.2894736842% 62.2368421053%, #fff 62.2368421053% 70.1315789474%, currentColor 70.1315789474% 73.2894736842%, #fff 73.2894736842% 74.8684210526%, currentColor 74.8684210526% 77.2368421053%, #fff 77.2368421053% 81.9736842105%, currentColor 81.9736842105% 87.5%, rgba(0, 0, 0, 0) 87.5%);
+}
+.search {
+  background-image:
+    radial-gradient(27.0833333333% 27.0833333333% at 40% 40%, #fff calc(69.2307692308% - 1px), currentColor 69.2307692308% 100%, rgba(0, 0, 0, 0) calc(100% + 1px)),
+    linear-gradient(225deg, #fff 47.0537217451%, rgba(0, 0, 0, 0) 47.0537217451% 52.9462782549%, #fff 52.9462782549%),
+    linear-gradient(135deg, #fff 40.8076118446%, currentColor 40.8076118446% 85.0017856687%, #fff 85.0017856687%);
+}
+.trash {
+  background-image:
+    linear-gradient(90deg, #fff 20.8333333333%, rgba(0, 0, 0, 0) 20.8333333333%, rgba(0, 0, 0, 0) 79.1666666667%, #fff 79.1666666667%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0) 75%, currentColor 75%, currentColor 83.3333333333%, rgba(0, 0, 0, 0) 83.3333333333%),
+    linear-gradient(225deg, #fff calc(26% - 1px), rgba(0, 0, 0, 0) 26%, rgba(0, 0, 0, 0) 78%, #fff calc(78% + 1px)),
+    linear-gradient(135deg, #fff calc(26% - 1px), rgba(0, 0, 0, 0) 26%, rgba(0, 0, 0, 0) 78%, #fff calc(78% + 1px)),
+    linear-gradient(90deg, #fff 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 75%, #fff 75%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0) 12.5%, currentColor 12.5%, currentColor 70.8333333333%, rgba(0, 0, 0, 0) 70.8333333333%),
+    linear-gradient(90deg, #fff 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 62.5%, #fff 62.5%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0) 83.3333333333%, currentColor 83.3333333333%, currentColor 87.5%, rgba(0, 0, 0, 0) 87.5%);
+}
+.bar-chart {
+  background-image:
+    linear-gradient(180deg, #fff 10%, rgba(0, 0, 0, 0) 10% 100%, #fff 100%),
+    linear-gradient(90deg, transparent 28.75%, currentColor 28.75% 47.5%, transparent 47.5%),
+    linear-gradient(180deg, #fff 20%, rgba(0, 0, 0, 0) 20% 100%, #fff 100%),
+    linear-gradient(90deg, transparent 52.5%, currentColor 52.5% 71.25%, transparent 71.25%),
+    linear-gradient(180deg, #fff 50%, rgba(0, 0, 0, 0) 50% 100%, #fff 100%),
+    linear-gradient(90deg, transparent 76.25%, currentColor 76.25% 95%, transparent 95%),
+    linear-gradient(180deg, #fff 60%, rgba(0, 0, 0, 0) 60% 100%, #fff 100%),
+    linear-gradient(90deg, transparent 5%, currentColor 5% 23.75%, transparent 23.75%);
+}
+.logo {
+  background-image: radial-gradient(50% 50%, #fff 15%, currentColor 15% 30%, #fff 30% 45%, rgba(0, 0, 0, 0) 45% 60%, #fff 60%), conic-gradient(from -45deg at 50% 50%, currentColor 90deg, rgba(0, 0, 0, 0) 90deg 120deg, currentColor 120deg 210deg, rgba(0, 0, 0, 0) 210deg 240deg, currentColor 240deg 330deg, rgba(0, 0, 0, 0) 330deg);
+}
+.logo-outer {
+  background-image: radial-gradient(50% 50%, #fff 15%, currentColor 15% 30%, #fff 30% 60%, rgba(0, 0, 0, 0) 60% 75%, #fff 75%), conic-gradient(from -30deg at 50% 50%, currentColor 60deg, rgba(0, 0, 0, 0) 60deg 90deg, currentColor 90deg 150deg, rgba(0, 0, 0, 0) 150deg 180deg, currentColor 180deg 240deg, rgba(0, 0, 0, 0) 240deg 270deg, currentColor 270deg 330deg, rgba(0, 0, 0, 0) 330deg);
+}
+.add {
+  background-image:
+    linear-gradient(180deg, #fff 20.8333333333%, rgba(0, 0, 0, 0) 20.8333333333%, rgba(0, 0, 0, 0) 79.1666666667%, #fff 79.1666666667%),
+    linear-gradient(90deg, #fff 20.8333333333%, rgba(0, 0, 0, 0) 20.8333333333%, rgba(0, 0, 0, 0) 45.8333333333%, currentColor 45.8333333333%, currentColor 54.1666666667%, rgba(0, 0, 0, 0) 54.1666666667%, rgba(0, 0, 0, 0) 79.1666666667%, #fff 79.1666666667%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 45.8333333333%, currentColor 45.8333333333%, currentColor 54.1666666667%, rgba(0, 0, 0, 0) 54.1666666667%);
+}
+.add-circle {
+  background-image:
+    radial-gradient(41.6666666667% 41.6666666667% at 50% 50%, rgba(0, 0, 0, 0) calc(80% - 1px), currentColor 80% 100%, #fff calc(100% + 1px)),
+    linear-gradient(180deg, #fff 29.1666666667%, rgba(0, 0, 0, 0) 29.1666666667%, rgba(0, 0, 0, 0) 70.8333333333%, #fff 70.8333333333%),
+    linear-gradient(90deg, #fff 29.1666666667%, rgba(0, 0, 0, 0) 29.1666666667%, rgba(0, 0, 0, 0) 45.8333333333%, currentColor 45.8333333333%, currentColor 54.1666666667%, rgba(0, 0, 0, 0) 54.1666666667%, rgba(0, 0, 0, 0) 70.8333333333%, #fff 70.8333333333%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 45.8333333333%, currentColor 45.8333333333%, currentColor 54.1666666667%, rgba(0, 0, 0, 0) 54.1666666667%);
+}
+.remove {
+  background-image: linear-gradient(90deg, #fff 20.8333333333%, rgba(0, 0, 0, 0) 20.8333333333%, rgba(0, 0, 0, 0) 79.1666666667%, #fff 79.1666666667%), linear-gradient(180deg, rgba(0, 0, 0, 0) 45.8333333333%, currentColor 45.8333333333%, currentColor 54.1666666667%, rgba(0, 0, 0, 0) 54.1666666667%);
+}
+.remove-circle {
+  background-image:
+    radial-gradient(41.6666666667% 41.6666666667% at 50% 50%, rgba(0, 0, 0, 0) calc(80% - 1px), currentColor 80% 100%, #fff calc(100% + 1px)),
+    linear-gradient(90deg, #fff 29.1666666667%, rgba(0, 0, 0, 0) 29.1666666667%, rgba(0, 0, 0, 0) 70.8333333333%, #fff 70.8333333333%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 45.8333333333%, currentColor 45.8333333333%, currentColor 54.1666666667%, rgba(0, 0, 0, 0) 54.1666666667%);
+}
+.info {
+  background-image: linear-gradient(180deg, #fff 29.1666666667%, rgba(0, 0, 0, 0) 29.1666666667% 37.5%, #fff 37.5% 45.8333333333%, rgba(0, 0, 0, 0) 45.8333333333% 70.8333333333%, #fff 70.8333333333%), linear-gradient(90deg, rgba(0, 0, 0, 0) 45.8333333333%, currentColor 45.8333333333%, currentColor 54.1666666667%, rgba(0, 0, 0, 0) 54.1666666667%);
+}
+.info-circle {
+  background-image:
+    radial-gradient(41.6666666667% 41.6666666667% at 50% 50%, rgba(0, 0, 0, 0) calc(80% - 1px), currentColor 80% 100%, #fff calc(100% + 1px)),
+    linear-gradient(180deg, #fff 29.1666666667%, rgba(0, 0, 0, 0) 29.1666666667% 37.5%, #fff 37.5% 45.8333333333%, rgba(0, 0, 0, 0) 45.8333333333% 70.8333333333%, #fff 70.8333333333%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 45.8333333333%, currentColor 45.8333333333%, currentColor 54.1666666667%, rgba(0, 0, 0, 0) 54.1666666667%);
+}
+.battery-empty {
+  background-image:
+    conic-gradient(from 270deg at 41.6666666667% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg),
+    conic-gradient(at 58.3333333333% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg),
+    linear-gradient(90deg, #fff 29.1666666667%, rgba(0, 0, 0, 0) 29.1666666667% 70.8333333333%, #fff 70.8333333333%),
+    linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 29.1666666667%, currentColor 29.1666666667% 37.5%, rgba(0, 0, 0, 0) 37.5% 62.5%, currentColor 62.5% 70.8333333333%, rgba(0, 0, 0, 0) 70.8333333333%),
+    linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 16.6666666667%, currentColor 16.6666666667% 25%, #fff 25% 83.3333333333%, currentColor 83.3333333333% 83.3333333333%, currentColor 83.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 41.6666666667%, currentColor 41.6666666667% 58.3333333333%, rgba(0, 0, 0, 0) 58.3333333333%);
+}
+.battery-full {
+  background-image:
+    conic-gradient(from 270deg at 41.6666666667% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg),
+    conic-gradient(at 58.3333333333% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg),
+    linear-gradient(90deg, #fff 29.1666666667%, rgba(0, 0, 0, 0) 29.1666666667% 70.8333333333%, #fff 70.8333333333%),
+    linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 29.1666666667%, currentColor 29.1666666667% 37.5%, rgba(0, 0, 0, 0) 37.5% 62.5%, currentColor 62.5% 70.8333333333%, rgba(0, 0, 0, 0) 70.8333333333%),
+    linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 16.6666666667%, currentColor 16.6666666667% 25%, #fff 25% 25%, currentColor 25% 83.3333333333%, currentColor 83.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 41.6666666667%, currentColor 41.6666666667% 58.3333333333%, rgba(0, 0, 0, 0) 58.3333333333%);
+}
+.battery-1 {
+  background-image:
+    conic-gradient(from 270deg at 41.6666666667% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg),
+    conic-gradient(at 58.3333333333% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg),
+    linear-gradient(90deg, #fff 29.1666666667%, rgba(0, 0, 0, 0) 29.1666666667% 70.8333333333%, #fff 70.8333333333%),
+    linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 29.1666666667%, currentColor 29.1666666667% 37.5%, rgba(0, 0, 0, 0) 37.5% 62.5%, currentColor 62.5% 70.8333333333%, rgba(0, 0, 0, 0) 70.8333333333%),
+    linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 16.6666666667%, currentColor 16.6666666667% 25%, #fff 25% 75%, currentColor 75% 83.3333333333%, currentColor 83.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 41.6666666667%, currentColor 41.6666666667% 58.3333333333%, rgba(0, 0, 0, 0) 58.3333333333%);
+}
+.battery-2 {
+  background-image:
+    conic-gradient(from 270deg at 41.6666666667% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg),
+    conic-gradient(at 58.3333333333% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg),
+    linear-gradient(90deg, #fff 29.1666666667%, rgba(0, 0, 0, 0) 29.1666666667% 70.8333333333%, #fff 70.8333333333%),
+    linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 29.1666666667%, currentColor 29.1666666667% 37.5%, rgba(0, 0, 0, 0) 37.5% 62.5%, currentColor 62.5% 70.8333333333%, rgba(0, 0, 0, 0) 70.8333333333%),
+    linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 16.6666666667%, currentColor 16.6666666667% 25%, #fff 25% 66.6666666667%, currentColor 66.6666666667% 83.3333333333%, currentColor 83.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 41.6666666667%, currentColor 41.6666666667% 58.3333333333%, rgba(0, 0, 0, 0) 58.3333333333%);
+}
+.battery-3 {
+  background-image:
+    conic-gradient(from 270deg at 41.6666666667% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg),
+    conic-gradient(at 58.3333333333% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg),
+    linear-gradient(90deg, #fff 29.1666666667%, rgba(0, 0, 0, 0) 29.1666666667% 70.8333333333%, #fff 70.8333333333%),
+    linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 29.1666666667%, currentColor 29.1666666667% 37.5%, rgba(0, 0, 0, 0) 37.5% 62.5%, currentColor 62.5% 70.8333333333%, rgba(0, 0, 0, 0) 70.8333333333%),
+    linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 16.6666666667%, currentColor 16.6666666667% 25%, #fff 25% 58.3333333333%, currentColor 58.3333333333% 83.3333333333%, currentColor 83.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 41.6666666667%, currentColor 41.6666666667% 58.3333333333%, rgba(0, 0, 0, 0) 58.3333333333%);
+}
+.battery-4 {
+  background-image:
+    conic-gradient(from 270deg at 41.6666666667% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg),
+    conic-gradient(at 58.3333333333% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg),
+    linear-gradient(90deg, #fff 29.1666666667%, rgba(0, 0, 0, 0) 29.1666666667% 70.8333333333%, #fff 70.8333333333%),
+    linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 29.1666666667%, currentColor 29.1666666667% 37.5%, rgba(0, 0, 0, 0) 37.5% 62.5%, currentColor 62.5% 70.8333333333%, rgba(0, 0, 0, 0) 70.8333333333%),
+    linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 16.6666666667%, currentColor 16.6666666667% 25%, #fff 25% 50%, currentColor 50% 83.3333333333%, currentColor 83.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 41.6666666667%, currentColor 41.6666666667% 58.3333333333%, rgba(0, 0, 0, 0) 58.3333333333%);
+}
+.battery-5 {
+  background-image:
+    conic-gradient(from 270deg at 41.6666666667% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg),
+    conic-gradient(at 58.3333333333% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg),
+    linear-gradient(90deg, #fff 29.1666666667%, rgba(0, 0, 0, 0) 29.1666666667% 70.8333333333%, #fff 70.8333333333%),
+    linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 29.1666666667%, currentColor 29.1666666667% 37.5%, rgba(0, 0, 0, 0) 37.5% 62.5%, currentColor 62.5% 70.8333333333%, rgba(0, 0, 0, 0) 70.8333333333%),
+    linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 16.6666666667%, currentColor 16.6666666667% 25%, #fff 25% 41.6666666667%, currentColor 41.6666666667% 83.3333333333%, currentColor 83.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 41.6666666667%, currentColor 41.6666666667% 58.3333333333%, rgba(0, 0, 0, 0) 58.3333333333%);
+}
+.battery-6 {
+  background-image:
+    conic-gradient(from 270deg at 41.6666666667% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg),
+    conic-gradient(at 58.3333333333% 16.6666666667%, #fff 90deg, rgba(0, 0, 0, 0) 90deg),
+    linear-gradient(90deg, #fff 29.1666666667%, rgba(0, 0, 0, 0) 29.1666666667% 70.8333333333%, #fff 70.8333333333%),
+    linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 29.1666666667%, currentColor 29.1666666667% 37.5%, rgba(0, 0, 0, 0) 37.5% 62.5%, currentColor 62.5% 70.8333333333%, rgba(0, 0, 0, 0) 70.8333333333%),
+    linear-gradient(180deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 16.6666666667%, currentColor 16.6666666667% 25%, #fff 25% 33.3333333333%, currentColor 33.3333333333% 83.3333333333%, currentColor 83.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 41.6666666667%, currentColor 41.6666666667% 58.3333333333%, rgba(0, 0, 0, 0) 58.3333333333%);
+}
+.man {
+  background-image:
+    linear-gradient(90deg, #fff 33.3333333333%, rgba(0, 0, 0, 0) 33.3333333333% 66.6666666667%, #fff 66.6666666667%),
+    linear-gradient(0, rgba(0, 0, 0, 0) 37.5%, currentColor 37.5% 70.8333333333%, rgba(0, 0, 0, 0) 70.8333333333%),
+    linear-gradient(90deg, #fff 41.6666666667%, rgba(0, 0, 0, 0) 41.6666666667% 58.3333333333%, #fff 58.3333333333%),
+    linear-gradient(0, rgba(0, 0, 0, 0) 8.3333333333%, currentColor 8.3333333333% 70.8333333333%, rgba(0, 0, 0, 0) 70.8333333333%),
+    radial-gradient(8.3333333333% 8.3333333333% at 50% 16.6666666667%, currentColor 100%, #fff calc(100% + 1px));
+}
+.woman {
+  background-image:
+    radial-gradient(8.3333333333% 8.3333333333% at 50% 16.6666666667%, currentColor 100%, rgba(0, 0, 0, 0) calc(100% + 1px)),
+    linear-gradient(180deg, #fff 29.1666666667%, rgba(0, 0, 0, 0) 29.1666666667% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 41.6666666667%, currentColor 41.6666666667% 58.3333333333%, rgba(0, 0, 0, 0) 58.3333333333%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 66.6666666667%, #fff calc(66.6666666667% + 1px)),
+    linear-gradient(120deg, #fff calc(42.3744707545% - 1px), rgba(0, 0, 0, 0) 42.3744707545%),
+    linear-gradient(240deg, #fff calc(42.3744707545% - 1px), currentColor 42.3744707545%);
+}
+.player-stop {
+  background-image: linear-gradient(90deg, #fff 25%, rgba(0, 0, 0, 0) 25% 75%, #fff 75%), linear-gradient(0deg, #fff 25%, currentColor 25% 75%, #fff 75%);
+}
+.player-play {
+  background-image:
+    linear-gradient(-90deg, rgba(0, 0, 0, 0) 66.6666666667%, #fff calc(66.6666666667% + 1px)),
+    linear-gradient(-148deg, #fff calc(38.7834944539% - 1px), rgba(0, 0, 0, 0) 38.7834944539%),
+    linear-gradient(-32deg, #fff calc(38.7834944539% - 1px), currentColor 38.7834944539%);
+}
+.player-skip-next {
+  background-image:
+    linear-gradient(180deg, #fff 25%, rgba(0, 0, 0, 0) 25% 75%, #fff 75%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 68.75%, currentColor 68.75% 77.0833333333%, rgba(0, 0, 0, 0) 77.0833333333%),
+    linear-gradient(-90deg, rgba(0, 0, 0, 0) 77.0833333333%, #fff calc(77.0833333333% + 1px)),
+    linear-gradient(-148deg, #fff calc(45.9941051621% - 1px), rgba(0, 0, 0, 0) 45.9941051621%),
+    linear-gradient(-32deg, #fff calc(45.9941051621% - 1px), currentColor 45.9941051621%);
+}
+.player-pause {
+  background-image:
+    linear-gradient(180deg, #fff 20.8333333333%, rgba(0, 0, 0, 0) 20.8333333333% 79.1666666667%, #fff 79.1666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 20.8333333333%, currentColor 20.8333333333% 45.8333333333%, rgba(0, 0, 0, 0) 45.8333333333%),
+    linear-gradient(180deg, #fff 20.8333333333%, rgba(0, 0, 0, 0) 20.8333333333% 79.1666666667%, #fff 79.1666666667%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 54.1666666667%, currentColor 54.1666666667% 79.1666666667%, rgba(0, 0, 0, 0) 79.1666666667%);
+}
+.send {
+  background-image:
+    linear-gradient(270deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(382.75deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 63.5%, #fff calc(63.5% + 1px)),
+    linear-gradient(157.25deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 63.5%, #fff calc(63.5% + 1px)),
+    linear-gradient(171deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(52.5% - 1px), currentColor 52.5%),
+    linear-gradient(369deg, #fff, #fff calc(52.5% - 1px), rgba(0, 0, 0, 0) 52.5%),
+    linear-gradient(382.75deg, currentColor, currentColor 63.5%, #fff calc(63.5% + 1px));
+}
+.calendar {
+  background-image:
+    radial-gradient(6.25% 6.25% at 75% 12.5%, currentColor 100%, rgba(0, 0, 0, 0) calc(100% + 1px)),
+    radial-gradient(6.25% 6.25% at 25% 12.5%, currentColor 100%, rgba(0, 0, 0, 0) calc(100% + 1px)),
+    linear-gradient(90deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(0, #fff 4.1666666667%, currentColor 4.1666666667% 12.5%, rgba(0, 0, 0, 0) 12.5% 66.6666666667%, currentColor 66.6666666667% 87.5%, #fff 87.5%),
+    linear-gradient(90deg, #fff 8.3333333333%, currentColor 8.3333333333% 16.6666666667%, #fff 16.6666666667% 83.3333333333%, currentColor 83.3333333333% 91.6666666667%, #fff 91.6666666667%);
+}
+.credit-card {
+  background-image:
+    linear-gradient(90deg, #fff 8.3333333333%, rgba(0, 0, 0, 0) 8.3333333333% 91.6666666667%, #fff 91.6666666667%),
+    linear-gradient(0, #fff 16.6666666667%, currentColor 16.6666666667% 25%, rgba(0, 0, 0, 0) 25% 50%, currentColor 50% 66.6666666667%, rgba(0, 0, 0, 0) 66.6666666667% 75%, currentColor 75% 83.3333333333%, #fff 83.3333333333%),
+    linear-gradient(90deg, #fff 8.3333333333%, currentColor 8.3333333333% 16.6666666667%, #fff 16.6666666667% 83.3333333333%, currentColor 83.3333333333% 91.6666666667%, #fff 91.6666666667%);
+}
+.accessibility {
+  background-image:
+    radial-gradient(8.3333333333% 8.3333333333% at 50% 16.6666666667%, currentColor 100%, rgba(0, 0, 0, 0) calc(100% + 1px)),
+    linear-gradient(90deg, #fff 12.5%, rgba(0, 0, 0, 0) 12.5% 87.5%, #fff 87.5%),
+    linear-gradient(180deg, #fff 29.1666666667%, currentColor 29.1666666667% 37.5%, rgba(0, 0, 0, 0) 37.5% 91.6666666667%, #fff 91.6666666667% 100%, #fff 100%),
+    linear-gradient(90deg, #fff 37.5%, currentColor 37.5% 45.8333333333%, rgba(0, 0, 0, 0) 45.8333333333% 54.1666666667%, currentColor 54.1666666667% 62.5%, #fff 62.5%),
+    linear-gradient(90deg, #fff 37.5%, rgba(0, 0, 0, 0) 37.5% 62.5%, #fff 62.5%),
+    linear-gradient(0, #fff 33.3333333333%, currentColor 33.3333333333% 70.8333333333%, #fff 70.8333333333%);
+}
+.pyramid-arrow-right {
+  background-image:
+    linear-gradient(270deg, rgba(0, 0, 0, 0) 58.3333333333%, #fff calc(58.3333333333% + 1px)),
+    linear-gradient(225deg, #fff calc(43.75% - 1px), rgba(0, 0, 0, 0) 43.75%),
+    linear-gradient(315deg, #fff calc(43.75% - 1px), currentColor 43.75%);
+}
+.pyramid-arrow-left {
+  background-image:
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 58.3333333333%, #fff calc(58.3333333333% + 1px)),
+    linear-gradient(45deg, #fff calc(43.75% - 1px), rgba(0, 0, 0, 0) 43.75%),
+    linear-gradient(135deg, #fff calc(43.75% - 1px), currentColor 43.75%);
+}
+.pyramid-arrow-up {
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 58.3333333333%, #fff calc(58.3333333333% + 1px)),
+    linear-gradient(135deg, #fff calc(43.75% - 1px), rgba(0, 0, 0, 0) 43.75%),
+    linear-gradient(225deg, #fff calc(43.75% - 1px), currentColor 43.75%);
+}
+.pyramid-arrow-down {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0) 58.3333333333%, #fff calc(58.3333333333% + 1px)),
+    linear-gradient(-45deg, #fff calc(43.75% - 1px), rgba(0, 0, 0, 0) 43.75%),
+    linear-gradient(45deg, #fff calc(43.75% - 1px), currentColor 43.75%);
+}
+.house {
+  background-image:
+    linear-gradient(-37deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(72% - 1px), #fff 72%),
+    linear-gradient(37deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(72% - 1px), #fff 72%),
+    linear-gradient(0, #fff, #fff 12.5%, rgba(0, 0, 0, 0) 12.5%),
+    linear-gradient(270deg, rgba(0, 0, 0, 0) 16.6666666667%, currentColor 16.6666666667% 37.5%, rgba(0, 0, 0, 0) 37.5% 62.5%, currentColor 62.5% 83.3333333333%, rgba(0, 0, 0, 0) 83.3333333333%),
+    linear-gradient(0, #fff, #fff 41.6666666667%, rgba(0, 0, 0, 0) 41.6666666667%),
+    linear-gradient(270deg, rgba(0, 0, 0, 0) 16.6666666667%, currentColor 16.6666666667% 83.3333333333%, rgba(0, 0, 0, 0) 83.3333333333%);
+}
+.sun {
+  background-image:
+    radial-gradient(29.1666666667% 29.1666666667% at 50% 50%, currentColor calc(71.4285714286% - 1px), #fff 71.4285714286% 100%, rgba(0, 0, 0, 0) calc(100% + 1px)),
+    linear-gradient(45deg, #fff 17.5909391956%, rgba(0, 0, 0, 0) 17.5909391956% 82.4090608044%, #fff 82.4090608044%),
+    linear-gradient(135deg, #fff 17.5909391956%, rgba(0, 0, 0, 0) 17.5909391956% 47.0537217451%, #fff 47.0537217451% 47.0537217451%, currentColor 47.0537217451% 52.9462782549%, #fff 52.9462782549% 52.9462782549%, rgba(0, 0, 0, 0) 52.9462782549% 82.4090608044%, #fff 82.4090608044%),
+    linear-gradient(45deg, rgba(0, 0, 0, 0) 47.0537217451%, currentColor 47.0537217451% 52.9462782549%, rgba(0, 0, 0, 0) 52.9462782549%),
+    linear-gradient(0, #fff 4.1666666667%, rgba(0, 0, 0, 0) 4.1666666667% 95.8333333333%, #fff 95.8333333333%),
+    linear-gradient(90deg, #fff 4.1666666667%, rgba(0, 0, 0, 0) 4.1666666667% 45.8333333333%, #fff 45.8333333333% 45.8333333333%, currentColor 45.8333333333% 54.1666666667%, #fff 54.1666666667% 54.1666666667%, rgba(0, 0, 0, 0) 54.1666666667% 95.8333333333%, #fff 95.8333333333%),
+    linear-gradient(0, rgba(0, 0, 0, 0) 45.8333333333%, currentColor 45.8333333333% 54.1666666667%, rgba(0, 0, 0, 0) 54.1666666667%);
+}
+.drop {
+  background-image:
+    radial-gradient(27.0833333333% 27.0833333333% at 50% 60.4166666667%, currentColor 100%, rgba(0, 0, 0, 0) calc(100% + 1px)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 46.875%, #fff calc(46.875% + 1px)),
+    linear-gradient(120deg, #fff calc(33.9863885844% - 1px), rgba(0, 0, 0, 0) 33.9863885844%),
+    linear-gradient(240deg, #fff calc(33.9863885844% - 1px), currentColor 33.9863885844%);
+}
+.blaj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blaj:after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 40%;
+  background-color: red;
+  box-sizing: border-box;
+  background-size: 33.33% 33.33%;
+  background-repeat: repeat;
+  background-image: radial-gradient(35% 35%, currentColor calc(100% - 1px), #fff 100%);
+}
+root {
+  min-height: 100vh;
+}
+body {
+  font-family:
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica Neue,
+    Arial,
+    sans-serif;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}

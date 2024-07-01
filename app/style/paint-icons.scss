@@ -122,8 +122,8 @@
       )};
   }
 
-  .circle-outline {
-    background-image: #{paint.circleOutline(
+  .circle-outlined {
+    background-image: #{paint.circleOutlined(
         var(--paint-primary-color),
         var(--paint-secondary-color),
         var(--paint-tertiary-color),
@@ -134,8 +134,8 @@
       )};
   }
 
-  .oval-outline {
-    background-image: #{paint.ovalOutline(
+  .oval-outlined {
+    background-image: #{paint.ovalOutlined(
         var(--paint-primary-color),
         var(--paint-secondary-color),
         var(--paint-tertiary-color),

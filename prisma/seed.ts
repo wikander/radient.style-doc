@@ -249,6 +249,9 @@ async function seed() {
           {
             className: "sun",
           },
+          {
+            className: "drop",
+          },
         ],
       },
     },
